@@ -1,5 +1,8 @@
 <?php
 
+use App\Http\Controllers\PaymentController;
+use App\Http\Controllers\ServiceController;
+use App\Models\Service;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -20,3 +23,17 @@ Route::get('/', function () {
 Auth::routes();
 
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
+
+
+// -----------------------------RUTAS PAGOS----------------------------------------
+
+Route::resource('/payment', PaymentController::class)->names('payment')->middleware('auth');
+
+
+// -----------------------------RUTAS SERVICIOS----------------------------------------
+
+Route::resource('/service', ServiceController::class)->names('service')->middleware('auth');
+
+ 
+
+

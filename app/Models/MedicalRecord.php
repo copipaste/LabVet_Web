@@ -9,7 +9,7 @@ class MedicalRecord extends Model
 {
     use HasFactory;
 
-    protected $table = 'medicalrecord';
+    protected $table = 'medicalRecord';
 
     // Campos que se pueden asignar de forma masiva
     protected $fillable = [
