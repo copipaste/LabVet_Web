@@ -1,6 +1,9 @@
 <?php
 
+use App\Http\Controllers\HomeController;
+use App\Http\Controllers\PaymentController;
 use Illuminate\Support\Facades\Route;
+use PHPUnit\Framework\Attributes\Group;
 
 /*
 |--------------------------------------------------------------------------
@@ -17,6 +20,11 @@ Route::get('/', function () {
     return view('welcome');
 });
 
-Auth::routes();
+//TODO: ESTO HE COMENTADO PARA QUE NO ME PIDA AUTENTICACIÓN
+// Auth::routes();
+//Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
 
-Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
+//TODO: ESTA ES UNA NUEVA FORMA DE HACERLO
+Route::controller(HomeController::class)->group(function() {
+    Route::get('/home', 'index')->name('home.index');
+});
