@@ -13,7 +13,6 @@ return [
     | https://github.com/jeroennoten/Laravel-AdminLTE/wiki/Basic-Configuration
     |
     */
-
     'title' => 'AdminLTE 3',
     'title_prefix' => '',
     'title_postfix' => '',
@@ -236,7 +235,7 @@ return [
     |
     */
 
-    'right_sidebar' => false,
+    'right_sidebar' => true,
     'right_sidebar_icon' => 'fas fa-cogs',
     'right_sidebar_theme' => 'dark',
     'right_sidebar_slide' => true,
@@ -376,40 +375,13 @@ return [
             // 'can' => 'analysis.package',
             'submenu' => [
                 [
-                    'text' => 'Usuarios',
-                     'url' => '/',
-                    'icon' => 'fas fa-fw fa-flask',
-         
-                ],
-                [
-                    'text' => 'Pacientes',
-                     'url' => '/',
-                    //'route' => 'recepcionistas.index',
-                    'icon' => 'fas fa-fw fa-flask',
-                     'can' => 'analisis.index',
-                ],
-                [
-                    'text' => 'Insumos',
-                     'url' => '/',
-                    //'route' => 'recepcionistas.index',
-                    'icon' => 'fas fa-fw fa-flask',
-                     'can' => 'analisis.index',
-                ],
-                [
-                    'text' => 'Promociones',
-                     'url' => '/',
-                    //'route' => 'recepcionistas.index',
-                    'icon' => 'fas fa-fw fa-flask',
-                     'can' => 'analisis.index',
-                ],
-                [
                     'text' => 'Pagos',
                      'url' => '/',
-                    //'route' => 'recepcionistas.index',
+                     //'route' => 'recepcionistas.index',
                     'icon' => 'fas fa-fw fa-flask',
-                     'can' => 'analisis.index',
+                    //'can' => 'analisis.index',
+         
                 ],
-
             ],
         ],
 
@@ -422,16 +394,12 @@ return [
                 [
                     'text' => 'Servicios',
                      'url' => '/',
+                     //'route' => 'recepcionistas.index',
                     'icon' => 'fas fa-fw fa-flask',
+                    //'can' => 'analisis.index',
          
                 ],
-                [
-                    'text' => 'Citas',
-                     'url' => '/',
-                    //'route' => 'recepcionistas.index',
-                    'icon' => 'fas fa-fw fa-flask',
-                     'can' => 'analisis.index',
-                ],
+ 
 
             ],
         ],

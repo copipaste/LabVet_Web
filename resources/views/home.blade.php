@@ -11,8 +11,18 @@
 @stop
 
 @section('css')
-    {{-- Add here extra stylesheets --}}
-    {{-- <link rel="stylesheet" href="/css/admin_custom.css"> --}}
+        {{-- Add here extra stylesheets --}}
+        {{-- <link rel="stylesheet" href="/css/admin_custom.css"> --}}
+        <style>
+            .main-sidebar { 
+                /* background-color: red !important  */
+                background-image: url('https://www.w3schools.com/w3images/avatar2.png') !important;
+            }
+            .navbar { background-color: red !important }
+            /* .skin-blue { background-color: rgb(0, 190, 73) !important } */
+            .control-sidebar { background-color: red !important }
+
+        </style>
 @stop
 
 @section('js')
@@ -27,9 +37,15 @@
  <h1>contenido der</h1>    
 @endsection
 
-@section('right_sidebar')
+{{-- @section('right_sidebar')
    <button class="btn btn-primary">Boton</button>
-@endsection
+@endsection --}}
+
+{{-- @section('adminlte_css_pre')
+     <link rel="stylesheet" href="/css/custom.css">
+@endsection --}}
+    
+ 
 
 @section('footer')
 <h1>contenido footer</h1>

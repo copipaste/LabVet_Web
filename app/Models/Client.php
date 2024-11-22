@@ -11,6 +11,7 @@ class Client extends Model
 
     // Especifica el nombre de la tabla en la base de datos
     protected $table = 'client';
+    protected $primaryKey = 'userId';
 
     // Campos que pueden ser llenados masivamente
     protected $fillable = [

@@ -10,10 +10,10 @@ class Admin extends Model
     use HasFactory;
 
     protected $table = 'admin';
+    protected $primaryKey = 'userId';
 
     // Campos que se pueden asignar de forma masiva
     protected $fillable = [
-        'userId',
         'position',
     ];
 
